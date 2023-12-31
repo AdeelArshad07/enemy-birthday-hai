@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation css</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: turquoise;
+        }
+        .div1{
+            width: 400px;
+            height: 400px;
+            background-image: url(./Allhamdulillah.jpg);
+            background-position: center;
+            background-size: cover;
+            border: 1px solid black;
+            animation-name: animation;
+            animation-duration: 5s;
+            animation-delay: 2s;
+            animation-timing-function: 10s;
+            animation-iteration-count: infinite;
+            /* animation-direction: alternate; */
+            box-shadow: 5px 5px 10px black;
+
+        }
+        @keyframes animation {
+            from{
+                width: 500px;
+                height: 500px;
+            }
+
+            to{
+                width: 600px;
+                height: 700px;
+                transform: rotate3d(1,1,1, 360deg);
+                background-image: url(./enemy.jpg);
+            }
+        }
+        .div1:hover{
+            box-shadow: 15px 12px 20px black;
+
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+</body>
+</html>
